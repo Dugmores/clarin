@@ -1,4 +1,6 @@
-#new stuff
+--new stuff (no desktop or laptop) just pure android phone
+
+
 this project is testing Github codespaces.
 It was entirely created, modified run, deployed in codespaces.
 the beautiy of the whole project virtual spaces and understanding of docker containers.
