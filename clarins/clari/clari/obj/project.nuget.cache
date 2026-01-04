@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rEqBLPgf1TI=",
+  "dgSpecHash": "Mt5NG4ORalo=",
   "success": true,
   "projectFilePath": "/workspaces/clarin/clarins/clari/clari/clari.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/bootstrap/5.3.8/bootstrap.5.3.8.nupkg.sha512"
+  ],
   "logs": []
 }

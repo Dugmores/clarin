@@ -13,6 +13,7 @@
         <title>Thanks</title>
     </head>
     <body>
+        <div class="text-center">
         <h1>Thank you for your response, @Model.Name!</h1>
         <p>We have recorded your RSVP as follows:</p>
         @if (Model.WillAttend == true)
@@ -24,5 +25,6 @@
             @:We are sorry to hear that you cannot attend.
         }
         <p>Click for all responses: <a asp-action="ListReponses">View all responses</a></p>
+        </div>
     </body>
 </html>
