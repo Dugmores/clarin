@@ -96,3 +96,4 @@
 /workspaces/clarin/clarins/clari/clari/obj/Debug/net10.0/clari.pdb
 /workspaces/clarin/clarins/clari/clari/obj/Debug/net10.0/clari.genruntimeconfig.cache
 /workspaces/clarin/clarins/clari/clari/obj/Debug/net10.0/ref/clari.dll
+/workspaces/clarin/clarins/clari/clari/obj/Debug/net10.0/compressed/z7szpbpqfs-{0}-asy246gc3m-asy246gc3m.gz
