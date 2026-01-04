@@ -1,0 +1,28 @@
+
+
+@model Clarins.Models.GuestResponse;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Thanks</title>
+    </head>
+    <body>
+        <h1>Thank you for your response, @Model.Name!</h1>
+        <p>We have recorded your RSVP as follows:</p>
+        @if (Model.WillAttend == true)
+        {
+            @:We are delighted that you are attending, drinks already in fridge
+        }
+        else
+        {
+            @:We are sorry to hear that you cannot attend.
+        }
+        <p>Click for all responses: <a asp-action="ListResponses">View all responses</a></p>
+    </body>
+</html>

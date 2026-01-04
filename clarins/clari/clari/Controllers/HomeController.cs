@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using clari.Models;
+using System.ComponentModel.Design;
+using System.Runtime.InteropServices;
 
 namespace clari.Controllers;
 
@@ -21,17 +23,27 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
     //action for the rsvp form
     [HttpGet]
     public ViewResult RSVPForm(){
         return View();
     }
     
+
     //post the rsvp form
     [HttpPost]
     public ViewResult RSVPForm(GuestResponse response)
     {
         Repository.AddReponse(response);
         return View("Thanks", response);
+    }
+
+
+    //list all responses action method
+    public ViewResult ListResponses()
+    {
+        return View(Repository.Responses.Where(r => r.WillAttend == true));
     }
 }
