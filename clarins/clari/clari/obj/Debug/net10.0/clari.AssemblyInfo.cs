@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clari")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b73269c436b2a4ab5587b6c203845754920c35d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+598a255b8dd3cea6a63042db6bb271ed00d6ccff")]
 [assembly: System.Reflection.AssemblyProductAttribute("clari")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clari")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
