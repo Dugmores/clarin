@@ -21,9 +21,17 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    //action fro the rsvap form
+    //action for the rsvp form
+    [HttpGet]
     public ViewResult RSVPForm(){
         return View();
     }
     
+    //post the rsvp form
+    [HttpPost]
+    public ViewResult RSVPForm(GuestResponse response)
+    {
+        Repository.AddReponse(response);
+        return View("Thanks", response);
+    }
 }
