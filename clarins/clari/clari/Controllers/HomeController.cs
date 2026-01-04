@@ -42,7 +42,7 @@ public class HomeController : Controller
 
 
     //list all responses action method
-    public ViewResult ListResponses()
+    public ViewResult ListReponses()
     {
         return View(Repository.Responses.Where(r => r.WillAttend == true));
     }
