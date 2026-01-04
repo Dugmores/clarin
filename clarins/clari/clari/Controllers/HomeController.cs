@@ -36,8 +36,16 @@ public class HomeController : Controller
     [HttpPost]
     public ViewResult RSVPForm(GuestResponse response)
     {
-        Repository.AddReponse(response);
-        return View("Thanks", response);
+        if (ModelSate.IsValid)
+        {
+          Repository.AddReponse(response);
+          return View("Thanks", response);
+        }
+        else
+        {
+            //there is a validation error
+            return View();
+        }
     }
 
 
